@@ -2,13 +2,13 @@
 
 ### Why Typst？
 
-typst是一种不同于Microsoft Word和$L^AT_EX$的排版系统，它拥有着足以媲美$L^AT_EX$的高度定义排版方式，$L^AT_EX$同款的优美数学公式字体，不会像Microsoft Word那样找不到隐形的“空格”，莫名的空白换行符换页符。同时，相比于$L^AT_EX$，typst具有更加高效的编译速度以及更容易上手的排版语法。
+typst是一种不同于Microsoft Word和LaTex的排版系统，它拥有着足以媲美LaTex的高度自定义排版方式，LaTex同款的优美数学公式字体，不会像Microsoft Word那样找不到隐形的“空格”，莫名的空白换行符换页符。同时，相比于LaTex，typst具有更加高效的编译速度以及更容易上手的排版语法。
 
 ### 使用须知
 
 本模板仅适用于南开大学人工智能学院的本科生毕业设计论文，不能保证可以适用于其他单位的论文排版。另外，由于人工智能学院的排版要求反复无常，所以请各位在使用本模板的时候注意以当年的要求为准。
 
-另外，本模板没有制作声明页，因为这一页后续还需要签名，建议先把声明页导出为pdf之后签名然后在[線上整理PDF文檔。](https://www.ilovepdf.com/zh-tw/organize-pdf)直接插入声明页到最终的论文中。
+另外，本模板没有制作声明页，因为这一页后续还需要签名，建议先把声明页导出为pdf之后签名然后在[iLovePDF网站](https://www.ilovepdf.com/zh-tw/organize-pdf)直接插入声明页到最终的论文中。
 
 ### 免责声明
 
@@ -33,7 +33,7 @@ typst是一种不同于Microsoft Word和$L^AT_EX$的排版系统，它拥有着�
 本模板一个正确的章节书写方式
 
 ```typst
-#set-heading-1("第一章 哈基米")//这个函数用于控制当前也开始之后的页眉内容
+#set-heading-1("第一章 哈基米")//这个函数用于控制当前页面开始之后的页眉内容
 #set-heading-seq(2)//这个用来控制编号，第n章就传入n作为参数
 #clear-local-image-seq()
 #clear-local-table-seq()//这两个函数与#set-heading-seq用于控制章节内的图表编号
@@ -44,7 +44,7 @@ typst是一种不同于Microsoft Word和$L^AT_EX$的排版系统，它拥有着�
 
 #end-of-section()//每一段文字写完之后，要加上这个用于实现word模板的分节
 
-== 第一节 哈基米哈气
+== 第一节 哈基米哈气//二级标题也是，手动编号
 
 卣析糧朅膣嬸椀邎儦拗謱硯访擲钿潈覃。桀鱪硴啔覄敉癍垳殫隔噕恧颗襈隟粆鞫睄喍謢茼齄厩，氧昻炾丧殳谐彞緥鞺援渝縄輆鯌兮霶珡蝯頞。
 
@@ -59,33 +59,22 @@ typst是一种不同于Microsoft Word和$L^AT_EX$的排版系统，它拥有着�
 
 关于图表的使用，可以参考模板中的例子
 
-
-
 ### typst基本语法快速上手
 
 https://typst.app/docs/tutorial/writing-in-typst/
-
-
 
 ### 项目目录
 
 ```text
 .
-├── algorithmic.typ//算法块
+├── algorithmic.typ//算法块代码
 ├── cite.bib//引用文件，bibtex格式
 ├── fonts//字体文件夹，按需安装
 ├── fonts.typ//各种字体函数
-├── gb-t-7714-2015-numeric.csl//改动的国标应用文件以适应学院模板要求
+├── gb-t-7714-2015-numeric.csl//改动的国标引用格式文件以适应学院模板要求
 ├── img//图床
 ├── README.md
 ├── refs//官方的模板
 ├── thesis.pdf//导出示例
 └── thesis.typ//主模板
-
 ```
-
-
-
-
-
-
